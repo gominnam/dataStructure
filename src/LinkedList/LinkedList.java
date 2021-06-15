@@ -1,15 +1,23 @@
+package LinkedList;
 
 public class LinkedList {
-    int data;
-    LinkedList next = null;
+    Node header;
 
-    LinkedList(int d){
-        this.data = d;
+    static class Node{
+        int data;
+        Node next = null;
     }
 
+    //생성자: 생성시 header 생성
+    LinkedList(){
+        header = new Node();
+    }
+
+    //추가
     void append(int d){
-        LinkedList end = new LinkedList(d);
-        LinkedList n = this;
+        Node end = new Node();
+        end.data = d;
+        Node n = header;
 
         while(n.next != null){
             n = n.next;
@@ -18,8 +26,9 @@ public class LinkedList {
         n.next = end;
     }
 
+    //삭제
     void delete(int d){
-        LinkedList n = this;
+        Node n = header;
 
         while(n.next != null){
             if(n.next.data == d){
@@ -31,8 +40,9 @@ public class LinkedList {
         }
     }
 
+    //값 회수: toString() 같은 기능
     void retrieve(){
-        LinkedList n = this;
+        Node n = header.next;
 
         while(n.next != null){
             System.out.print(n.data + "->");
@@ -45,7 +55,8 @@ public class LinkedList {
 //Test Code
 class singlyLinkedList{
     public static void main(String[] args){
-        LinkedList ll = new LinkedList(1);
+        LinkedList ll = new LinkedList();
+        ll.append(1);
         ll.append(2);
         ll.append(3);
         ll.append(4);
