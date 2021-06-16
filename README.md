@@ -11,6 +11,8 @@
 
 + 학습 순서
   + LinkedList(Node 구현)
+    + append(추가), delete(삭제), retrieve(출력)
+    + removeDups(중복제거), KthToLast(끝에서 k번째 값)
   
   
 -----------------------------------------------------
