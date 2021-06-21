@@ -5,11 +5,11 @@ import java.util.EmptyStackException;
 public class Stack<T> {
     private  Node<T> top;
 
-    class Node<T>{
-        private T data;
-        private Node<T> next;
+    class Node<S>{
+        private S data;
+        private Node<S> next;
 
-        public Node(T data){
+        public Node(S data){
             this.data = data;
         }
     }
@@ -42,7 +42,7 @@ public class Stack<T> {
     }
 }
 
-class Text{
+class Test{
     public static void main(String[] args){
         Stack<Integer> s = new Stack<Integer>();
         s.push(1);

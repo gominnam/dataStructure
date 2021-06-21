@@ -10,9 +10,13 @@
 ------------------------------------------------------
 
 + 학습 순서
-  + LinkedList(Node 구현)
+  + LinkedList
     + append(추가), delete(삭제), retrieve(출력)
     + removeDups(중복제거), KthToLast(끝에서 k번째 값)
+  + Stack
+    + push(추가), pop(top 삭제, 반환), peek(top 반환), isEmpty(top Null 체크) 
+  + Queue
+    + add(추가), remove(first 삭제, 반환), peek(first 반환), isEmpty(first Null 체크)
   
   
 -----------------------------------------------------
