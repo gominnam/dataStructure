@@ -63,6 +63,7 @@ class Test{
         //t.inorder(t.getRoot());// 4 2 5 1 3
         //t.preorder(t.getRoot());// 1 2 4 5 3
         t.postorder(t.getRoot()); // 4 5 2 3 1
+
     }
 }
 
@@ -71,5 +72,5 @@ class Test{
 
 //부모 - 자식 관계로 정의하고, 부모에서 자식으로 간선이 이어져 있는 유향 그래프이다.
 //자료구조에서의 트리는 부모가 없는 루트 노드를 정의한다.
-
+//
  */
